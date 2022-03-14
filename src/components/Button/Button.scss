@@ -1,0 +1,45 @@
+@import '../../styles/font-mixins';
+
+.Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0px;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+
+    border-radius: 8px;
+    width: fit-content;
+
+    &__outlined {
+        border: 1px solid;
+    }
+
+    &__primary {
+        color: var(--color-blue);
+        &:hover {
+            background-color: var(--color-blue);
+            color: var(--color-white);
+        }
+    }
+    &__secondary {
+        color: var(--color-green);
+        &:hover {
+            background-color: var(--color-green);
+            color: var(--color-white);
+        }
+    }
+    &__small {
+        @extend %body2;
+        padding: 8px;
+    }
+    &__medium {
+        @extend %body1;
+        padding: 16px;
+    }
+    &__large {
+        @extend %h2;
+        padding: 16px;
+    }
+}

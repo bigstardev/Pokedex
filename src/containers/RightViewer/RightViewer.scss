@@ -1,0 +1,39 @@
+$width: 421px;
+.RightViewer {
+    border: 1px solid var(--color-grey-border);
+    border-radius: 16px;
+    width: $width;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 24px 0px 16px;
+        padding: 16px 0px 15.5px 0px;
+        border-bottom: 1px solid var(--color-grey-border);
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            padding: 24.5px 0px 24px 24px;
+            &-types {
+                display: flex;
+                margin-bottom: 16px;
+                flex-wrap: wrap;
+            }
+            &-property {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-right {
+            padding: 41.5px 24px 39px 24px;
+        }
+    }
+}
+.pokemanImg {
+    width: 144px;
+    height: 144px;
+}

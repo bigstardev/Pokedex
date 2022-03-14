@@ -1,0 +1,41 @@
+@import '../../styles/font-mixins';
+.Tag {
+    border-radius: 100px;
+    width: fit-content;
+    border: 1px solid;
+    color: var(--color-blue);
+
+    &__size-large {
+        padding: 8px 32px;
+        @extend %h2;
+    }
+    &__size-medium {
+        padding: 4px 28px;
+        @extend %body1;
+    }
+    &__size-small {
+        padding: 2px 20px;
+        @extend %body2;
+    }
+    &__color-green {
+        color: var(--color-green);
+    }
+    &__color-yellow {
+        color: var(--color-yellow);
+    }
+    &__color-red {
+        color: var(--color-red);
+    }
+    &__color-blue {
+        color: var(--color-blue);
+    }
+    &__color-purple {
+        color: var(--color-purple);
+    }
+    &__color-blue-black {
+        color: var(--color-blue-black);
+    }
+    &__color-yellow-black {
+        color: var(--color-yellow-black);
+    }
+}

@@ -1,0 +1,61 @@
+@import '../../styles/font-mixins';
+$minWidth: 100px;
+.DropDown {
+    width: 100%;
+    min-width: $minWidth;
+    cursor: pointer;
+    color: var(--color-blue);
+    &__label {
+        color: var(--color-black-header);
+        @extend %body2;
+        &-focus {
+            color: inherit;
+        }
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--color-grey-border);
+        color: var(--color-black-body);
+        &-focus {
+            border-bottom-color: var(--color-blue);
+        }
+    }
+    &__arrow {
+        transition: all 0.2s;
+
+        &-open {
+            transform: rotate(-180deg);
+            & path {
+                fill: var(--color-blue);
+            }
+        }
+    }
+    &__list-container {
+        position: relative;
+        width: 100%;
+    }
+    &__list {
+        padding: 8px 0px;
+        margin: 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        position: absolute;
+
+        &-item {
+            padding: 6px 16px;
+            list-style: none;
+            color: var(--color-black-body);
+            &:hover {
+                background-color: #e7f3ff;
+            }
+            &-active {
+                background-color: #cde6ff;
+            }
+        }
+    }
+}

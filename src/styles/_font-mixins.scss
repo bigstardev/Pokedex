@@ -1,0 +1,17 @@
+%h2 {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+}
+%body1 {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-body1);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body1);
+}
+%body2 {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-body2);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body2);
+}
