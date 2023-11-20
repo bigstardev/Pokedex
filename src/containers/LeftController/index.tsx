@@ -88,14 +88,14 @@ const LeftController: FC<Props> = ({ setData }) => {
                             color="primary"
                             onClick={() => {
                                 setSelectedOption(() => ({
-                                    label: 'Select',
+                                    label: 'Random',
                                     value: randomNumber(1, 151),
                                 }));
                                 setLoading(true);
                             }}
                             style={{ width: '100%' }}
                         >
-                            View
+                            View Random Pokemon
                         </Button>
                     </div>
                 </div>
